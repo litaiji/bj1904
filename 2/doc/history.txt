@@ -1,0 +1,602 @@
+    1  reboot
+    2  apt-get install ssh-server
+    3  sudo apt-get install openssl-ssh
+    4  sudo apt-get install openssh-server
+    5  ps -aux | grep ssh
+    6  service ssh start
+    7  ifconfig
+    8  ping www.baidu.com
+    9  ifconfig
+   10  halt
+   11  sudo halt
+   12  sudo apt-get install xrdp vnc4server xbase-clients
+   13  cd /var/lib/dpkg/
+   14  ls
+   15  sudo rm -f lock
+   16  ls
+   17  sudo apt-get install xrdp vnc4server xbase-clients
+   18  sudo apt-get update 
+   19  sudo apt-get install xrdp vnc4server xbase-clients
+   20  ls
+   21  sudo rm -f lock
+   22  sudo apt-get install xrdp vnc4server xbase-clients
+   23  cd ../..
+   24  ls
+   25  cd cache/
+   26  ls
+   27  cd apt
+   28  ls
+   29  sudo rm -f *
+   30  sudo rm -ff *
+   31  sudo rm -rf *
+   32  ls
+   33  sudo apt-get install xrdp vnc4server xbase-clients
+   34  sudo apt-get install dconf-editor
+   35  ls
+   36  cd py
+   37  cd pycharm
+   38  ls
+   39  cd pycharm-2018.3.1/
+   40  ls
+   41  cd bin
+   42  ls
+   43  ./pycharm.sh &
+   44  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
+   45  sudo add-apt-repository 'deb https://typora.io linux/'
+   46  sudo add-apt-repository -r 'deb https://typora.io linux/'
+   47  sudo apt-get update
+   48  sudo apt-get install typora
+   49  sudo apt install typora
+   50  sudo apt update
+   51  sudo apt list --upgradable
+   52  sudo apt install typora
+   53  wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
+   54  sudo add-apt-repository 'deb https://typora.io/linux ./'
+   55  sudo apt-get update
+   56  sudo apt-get install typora
+   57  ifconfig
+   58  sudo apt-get install kazam
+   59  ifconfig
+   60  lsb_releae -a
+   61  lsb_release -a
+   62  uname -a
+   63  cd ..
+   64  ls
+   65  cd python/
+   66  ls
+   67  cd Desktop/
+   68  ls
+   69  mkdir 123
+   70  mkdir 111
+   71  mkdir 1234
+   72  touch 1
+   73  touch 12
+   74  mkdir 成大帅哥
+   75  exit
+   76  cd Desktop/
+   77  ls
+   78  touch 1
+   79  ls
+   80  touch 11
+   81  touch 11111111111
+   82  exit
+   83  ls
+   84  cd Desktop/
+   85  ls
+   86  user
+   87  users
+   88  username
+   89  cd /
+   90  ls
+   91  cd /etc/
+   92  ls
+   93  sudo vim hostname 
+   94  sudo vi hostname 
+   95  sudo vi hosts
+   96  sudo vi passwd
+   97  cat passwd
+   98  exit
+   99  mkdir 8
+  100  touch 88
+  101  touch 888
+  102  mkdir 8888
+  103  touch 9999
+  104  ls
+  105  mv 8 88 888
+  106  rm 8 88 888 8888
+  107  rm 88 888
+  108  rm 9999
+  109  mv 8 8888
+  110  ls
+  111  mv 8888
+  112  rmdir 8888
+  113  ls
+  114  rm -rf 8888
+  115  ls
+  116  cd Desktop/
+  117  ls
+  118  touch 2222
+  119  touch 22222
+  120  mkdir 88
+  121  mkdir 8
+  122  touch 123456
+  123  touch 999
+  124  clear
+  125  sudo apt install yum
+  126  exit
+  127  ls
+  128  tree
+  129  cd /
+  130  ls
+  131  cd ~
+  132  ls
+  133  cd tool/
+  134  ls
+  135  cp pycharm-professional-2018.3.1.tar.gz 10.0.126.178/
+  136  cp pycharm-professional-2018.3.1.tar.gz dada@10.0.126.178:/
+  137  cp pycharm-professional-2018.3.1.tar.gz dada@10.0.126.178:/home/dada
+  138  cp pycharm-professional-2018.3.1.tar.gz dada@10.0.126.178:/home
+  139  cp pycharm-professional-2018.3.1.tar.gz dada@10.0.126.178:
+  140  cp sogoupinyin_2.2.0.0108_amd64.deb dada@10.0.126.178:
+  141  exit
+  142  ls
+  143  cd tool/
+  144  ls
+  145  rm dada@10.0.126.178\: 
+  146  ls
+  147  exit
+  148  cd /
+  149  tree -L 1
+  150  cd 
+  151  pwd
+  152  cd root
+  153  cd /
+  154  cd root
+  155  cd usr
+  156  ls
+  157  cd
+  158  ls
+  159  ls -l
+  160  ls -a
+  161  ls -la
+  162  ls -l
+  163  ls -l P*
+  164  ls  P*
+  165  ls *.desktop
+  166  ls -l Music
+  167  ls -l tool
+  168  ls -i
+  169  ls -li
+  170  ls .
+  171  ls /
+  172  ls --help
+  173  ls -l
+  174  ll
+  175  ls -la
+  176  ls --help
+  177  man
+  178  man ls
+  179  sudo apt install man -y
+  180  man ls
+  181  history
+  182  ls
+  183  ./pycharm.sh &
+  184  sudo apt update
+  185  sudo apt install openssh-server
+  186  ps -aux|grep ssh
+  187  ifconfig
+  188  ssh liqian@10.0.126.165
+  189  ifconfig
+  190  passwd
+  191  exit
+  192  su
+  193  sudo su
+  194  exit
+  195  ifconfig
+  196  cd /etc/
+  197  hosts
+  198  sudo vi hosts
+  199  ./pycharm.sh 
+  200  cd
+  201  cd tmp
+  202  ls
+  203  mkdir 1
+  204  ll
+  205  mkdir -p 1/2/3
+  206  tree 
+  207  mkdir -p 2/{3,4}/{5,7,8}
+  208  tree 
+  209  cd
+  210  ls
+  211  rm tmp
+  212  cd tmp
+  213  tree
+  214  cd 1
+  215  cd 2/3
+  216  ls
+  217  cd ..
+  218  tree
+  219  rmdir 3
+  220  ls
+  221  cd ../..
+  222  ls
+  223  tree
+  224  rmdir 1/2
+  225  tree
+  226  rmdir 2/3/5
+  227  rmdir -p 2/3/7
+  228  tree
+  229  mkdir 1/2/3/4
+  230  mkdir -p 1/2/3/4
+  231  tree
+  232  rmdir -p 1/2/3/4
+  233  tree
+  234  cd /etc/
+  235  ll
+  236  cd
+  237  cd tmp
+  238  ls
+  239  tree
+  240  echo 111
+  241  echo "hello world"
+  242  echo 1111 > 11.txt
+  243  ll
+  244  cat 11.txt 
+  245  echo 'hello world' > 3.txt
+  246  ll
+  247  ls -li
+  248  ls -li > 4.txt
+  249  ls
+  250  cat 4.txt 
+  251  ls -li /
+  252  ls -li / > 4.txt 
+  253  cat 4.txt 
+  254  ls -li ~
+  255  ls -li ~ >> 4.txt 
+  256  cat 4.txt 
+  257  touch 5.txt 5.php
+  258  ll
+  259  touch 4.txt
+  260  ll
+  261  tree
+  262  mv 4.txt 2/4/8/
+  263  tree
+  264  mv 5.txt 2/4/8/51.txt
+  265  tree
+  266  mv 3.txt 31.txt
+  267  tree
+  268  cp 31.txt 2/3/8/
+  269  tree
+  270  cp 2/3/8 ./
+  271  cp -r 2/3/8 ./
+  272  tree
+  273  cp -r 8 / 
+  274  sudo cp -r 8 / 
+  275  cd /
+  276  ls
+  277  tree -L 1
+  278  tree -L 2
+  279  tree -L 2 8
+  280  cd
+  281  cd tmp
+  282  ls
+  283  rm 5.php
+  284  ls
+  285  rm -i 31.txt 
+  286  ls
+  287  rm -f 2.txt 
+  288  ls
+  289  rm 8
+  290  rm -r 8
+  291  ls
+  292  tree
+  293  rm -rf 2
+  294  tree
+  295  ls
+  296  cat 11.txt 
+  297  ls -li / >> 11.txt 
+  298  cat 11.txt 
+  299  ls
+  300  ls -l ~ >> 2.txt
+  301  ls
+  302  cat 11.txt 2.txt 
+  303  cat 11.txt 2.txt  > 3.txt
+  304  cat 3.txt 
+  305  cat 11.txt 2.txt  >> 4.txt
+  306  cat 4.txt 
+  307  tac 4.txt 
+  308  head -2 4.txt 
+  309  head 4.txt 
+  310  tail 4.txt 
+  311  tail -3 4.txt 
+  312  tail -f cat 4.txt 
+  313  cat 4.txt 
+  314  watch -d -n 1 cat 4.txt 
+  315  watch -d -n 1 tail -4  4.txt 
+  316  vi 4.txt 
+  317  ls
+  318  more 3.txt 
+  319  tree -L 3 / >> 3.txt 
+  320  more 3.txt 
+  321  less 3.txt 
+  322  stat 3.txt 
+  323  ll
+  324  ln -s 3.txt 33.txt
+  325  ll
+  326  cd
+  327  find ./ -name '*.txt'
+  328  find ./ -name 3*
+  329  find ./ -name -maxdepth 2 3*
+  330  find ./ -maxdepth 2  -name  3*
+  331  find /etc -name 'nginx.conf'
+  332  sudo find /etc -name 'nginx.conf'
+  333  sudo find /etc -name 'hosts'
+  334  ll
+  335  find -size -1k
+  336  find -size -1k -ls
+  337  cd tmp
+  338  ll
+  339  find -size -1k
+  340  find -size -1000
+  341  find -size +1000
+  342  cd
+  343  ls
+  344  ll
+  345  find -size +1000 -size -5000
+  346  find -maxdepth 1  -size +1000 -size -5000
+  347  find -maxdepth 2  -size +1000 -size -5000
+  348  find -maxdepth 2  -size +1k -size -5k
+  349  find -maxdepth 2  -size +1M -size -5M
+  350  find -type l
+  351  ll
+  352  find -type l -ls
+  353  find -type d -ls
+  354  find -maxdepth 1 -type d -ls
+  355  find -maxdepth 1 -type f -ls
+  356  cd tmp
+  357  ls
+  358  ll
+  359  find -name '4.txt' -exec rm -f {} \;
+  360  ll
+  361  grep --help
+  362  ls
+  363  tree
+  364  vi 3
+  365  grep '3333' 3.txt 
+  366  cat 3
+  367  grep '3333' 3.txt 
+  368  grep 'hello' 3.txt 
+  369  grep -c 'hello' 3.txt 
+  370  ls
+  371  cat 3.txt 
+  372  grep '333' 3
+  373  grep -c '333' 3
+  374  grep -w '333' 3
+  375  grep -w '3333' 3
+  376  grep -l -w '3333' 
+  377  grep -l  '3333' 
+  378  grep -l  '3333' 3
+  379  grep -r  '3333' 3
+  380  echo '3333' 5.txt
+  381  grep -r  '3333' 
+  382  cat 5.
+  383  cat 5
+  384  ls
+  385  echo '3333' > 5
+  386  ls
+  387  grep -r '3333'
+  388  grep -r -l '3333'
+  389  grep -r -n '3333'
+  390  grep -r -n -E  '^3'
+  391  grep -r -n -E  '3$'
+  392  grep -r --include '*.txt'  -E  '3$'
+  393  grep -r --exclude '*.txt'  -E  '3$'
+  394  ls -l
+  395  ls -a
+  396  ls /
+  397  ls
+  398  ls examples.desktop 
+  399  ls -l examples.desktop 
+  400  ls -la
+  401  ls -a
+  402  ls -l
+  403  man ls
+  404  ls --help
+  405  ll
+  406  cat .bashrc
+  407  history
+  408  cd /
+  409  ls
+  410  ll
+  411  tree -L 1
+  412  cd /
+  413  cd
+  414  ls
+  415  mkdir tmp
+  416  cd tmp
+  417  touch 1.txt
+  418  ls
+  419  ll
+  420  ln 1.txt 11.txt
+  421  ll
+  422  ls -li
+  423  cd ..
+  424  ls
+  425  ln tmp tmp1
+  426  cd tmp
+  427  ls
+  428  ll
+  429  rm -f 1.txt
+  430  ll
+  431  ls -li
+  432  stat 11.txt 
+  433  ll
+  434  ln -s 11.txt 2.txt
+  435  ll
+  436  ls -li
+  437  rm -f 11.txt
+  438  ls -li
+  439  touch 11.txt
+  440  ll
+  441  cd ..
+  442  ll
+  443  ls -li
+  444  ln -s tmp tmp1
+  445  ls -li
+  446  cd tmp1
+  447  ls
+  448  cd /etc/
+  449  ls -li
+  450  cd rc0
+  451  ll
+  452  cd rc0.d/
+  453  ll
+  454  cd ..
+  455  cd rc1
+  456  cd rc1.d/
+  457  ll
+  458  cd
+  459  cd tmp
+  460  ll
+  461  cd
+  462  ls
+  463  ls examples.desktop 
+  464  ls - li
+  465  ls -li
+  466  Ls
+  467  pwd
+  468  cd ..
+  469  ls
+  470  cd python/
+  471  pwd
+  472  cd ../..
+  473  pwd
+  474  cd /home/python/tmp
+  475  cd
+  476  ls
+  477  cd tmp
+  478  cd 
+  479  cd tmp
+  480  cd ..
+  481  pwd
+  482  cd /home
+  483  cd
+  484  pwd
+  485  cd ..
+  486  cd
+  487  cd ~
+  488  cd /
+  489  cd
+  490  cd /
+  491  cd ~
+  492  cd ~/tmp
+  493  cd ~
+  494  cd ..
+  495  touch 1.txt
+  496  cd
+  497  cd ~\tmp
+  498  cd ~/tmp
+  499  cd
+  500  cd -
+  501  cd /
+  502  sudo su
+  503  ifconfig
+  504  group 
+  505  groups
+  506  id
+  507  cat /etc/passwd
+  508  cat /etc/shadow
+  509  sudo cat /etc/shadow
+  510  sudo cat /etc/group
+  511  cat /etc/passwd
+  512  sudo useradd -m test1
+  513  cat /etc/passwd
+  514  cd ..
+  515  ls
+  516  sudo useradd  test2
+  517  cat /etc/passwd
+  518  ls
+  519  sudo useradd -md test3 test3
+  520  sudo useradd -md /test3 test3
+  521  cd /
+  522  ls
+  523  cd
+  524  groups test3
+  525  su test3
+  526  sudo passswd test3
+  527  sudo passwd test3
+  528  su test3
+  529  sudo useradd -g python -G sudo -s /sbin/nologin test4
+  530  cat /etc/passwd
+  531  groups test4
+  532  sudo passwd test4
+  533  su test4
+  534  cd /
+  535  ls
+  536  cd sbin
+  537  ls
+  538  cd /usr/sbin/
+  539  ls
+  540  cd
+  541  sudo useradd -s /usr/sbin/nologin test5
+  542  cat /etc/passwd
+  543  sudo passwd test5
+  544  su test5
+  545  sudo adduser
+  546  sudo adduser csl
+  547  cat /etc/passwd
+  548  sudo userdel -r test5
+  549  cd ..
+  550  sudo userdel -r csl
+  551  ls
+  552  sudo userdel -r test1
+  553  ls
+  554  cat /etc/passwd
+  555  sudo userdel -r test2
+  556  sudo userdel -r test3
+  557  sudo userdel -r test4
+  558  cat /etc/passwd
+  559  sudo userdel -r test3
+  560  ps -aux 
+  561  ps -aux | grep test3
+  562  sudo kill -9 3550
+  563  ps -aux| grep test3
+  564  sudo userdel -r test3
+  565  cat /etc/passwd
+  566  cd /
+  567  ls
+  568  sudo useradd test1
+  569  id
+  570  id test1
+  571  sudo passwd test1
+  572  su test1
+  573  sudo usermod -aG sudo test1
+  574  id test1
+  575  sudo usermod -l test2 test1
+  576  cat /etc/passwd
+  577  sudo passwd test2
+  578  sudo passwd -l test2
+  579  sudo cat /etc/shadow
+  580  sudo passwd -u test2
+  581  sudo passwd -l test2
+  582  sudo passwd -u test2
+  583  sudo cat /etc/shadow
+  584  passwd
+  585  passwd test2
+  586  su
+  587  sudo su
+  588  sudo visudo
+  589  sudo cat /etc/shadow
+  590  sudo visudo
+  591  id
+  592  id test2
+  593  groups
+  594  groups test2
+  595  whoami
+  596  sudo groupadd g1
+  597  cat /etc/group
+  598  groupdel g1
+  599  sudo groupdel g1
+  600  cat /etc/group
+  601  su test2
+  602  history >> ~/history.txt
