@@ -67,10 +67,10 @@
     - git log
     - git log --pretty=oneline
       -版本回退
-    - git reset  head~n
-        - head~ 上一个版本
-        - head~~上两个版本
-        - head~n 上n版本
+    - git reset  HEAD~n
+        - HEAD~ 上一个版本
+        - HEAD~~上两个版本
+        - HEAD~n 上n版本
     - git reset --hard 版本号
     - git reflog 查看每个版本的版本号
 ## 3.git使用流程
