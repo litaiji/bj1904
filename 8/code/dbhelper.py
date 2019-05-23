@@ -50,7 +50,7 @@ class Dbhelper:
         """
         for key in data:
             if isinstance(data[key],str): # 是字符串两边添加单引号
-                data[key] = "'" + data[key] + "'"
+                data[key] = "'" + pymysql.escape_string(data[key]) + "'"
             else: # 不是字符串，转换为字符串
                 data[key] = str(data[key])
         return self
