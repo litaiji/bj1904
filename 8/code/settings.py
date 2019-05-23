@@ -5,5 +5,5 @@ parameters = {
     'password':'123',
     'port':3306,
     'charset':'utf8',
-    'database':'test'
+    'database':'student02'
 }
