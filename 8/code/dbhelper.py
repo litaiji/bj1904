@@ -3,18 +3,46 @@ db.field('sname,ssex,sclass).where(ssex='男').orderby('sname desc).select()
 db.where(ssex='男').orderby('sname desc).field('sname,ssex,sclass).select()
 
 """
+import os
+
 import pymysql
+
 import settings
+
 class Dbhelper:
     def __init__(self,table):
         self.table = table  # 表名
         self.conn = pymysql.Connect(**settings.parameters) #连接数据库
         self.cursor = self.conn.cursor(pymysql.cursors.DictCursor)  #游标
         self.params = self.__init_param()   #初始化字典参数
+        self.__cache_fields()
+
     def __del__(self):
         self.cursor.close()
         self.conn.close()
-
+    # 生成缓存字段
+    def __cache_fields(self):
+        # 判断缓存目录是否存在
+        if not os.path.exists('cache'):
+            os.mkdir('cache')
+        path = "cache/" + self.table   #缓存文件的路径
+        if os.path.exists(path):
+            with open(path) as fp:
+                self.params['fields'] = fp.read()
+        else: #缓存文件不存在
+            sql = "desc " + self.table
+            res = self.cursor.execute(sql)
+            if res>0:
+                records = self.cursor.fetchall()
+                value = ''
+                for rec in records:
+                    # print(rec['Field'])
+                    value += rec['Field'] + ','
+                # print(records)
+                value = value.rstrip(',')
+                with open(path,'w') as fp:
+                    fp.write(value)
+                self.params['fields'] = value
     def __init_param(self):
          return  {
                 'fields': '*',
@@ -157,7 +185,7 @@ class Dbhelper:
         values = ''
         for key, value in data.items():
             keys += key + ','
-            values += str(value) + ','
+            values += value + ','
         keys = keys.rstrip(',')
         values = values.rstrip(',')
         self.params['fields'] = keys
@@ -211,4 +239,6 @@ if __name__ == "__main__":
     # print(data)
     # db.insert({'name':'hello1','sex':'男'})
     # db.where(sid=9).delete()
-    db.where(sid=8).update({'gid':10})
+    # db.where(sid=8).update({'gid':30})
+
+    # db.query("")
