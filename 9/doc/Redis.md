@@ -504,3 +504,34 @@ repl_backlog_first_byte_offset:0
 repl_backlog_histlen:0
 ~~~
 
+# 七. 发布和订阅
+
+Redis提供了发布订阅功能，可以用于消息的传输，Redis的发布订阅机制包括三个部分，发布者，订阅者和Channel。 
+
+![1558675396827](publish.png)
+
+发布者和订阅者都是Redis客户端，Channel则为Redis服务器端，发布者将消息发送到某个的频道，订阅了这个频道的订阅者就能接收到这条消息。Redis的这种发布订阅机制与基于主题的发布订阅类似，Channel相当于主题。
+
+- 订阅
+
+  订阅者对一个或多个频道感兴趣，只需要接收感兴趣的的消息，不必知道谁发布的
+
+  ~~~
+  SUBSCRIBE 频道名称,频道名称..
+  SUBSCRIBE  channel*
+  ~~~
+
+- 发布
+
+  ~~~
+  publish 频道 消息
+  ~~~
+
+- 取消订阅
+
+  ~~~
+  UNSUBSCRIBE 频道
+  UNSUBSCRIBE    #不带参数，取消所有订阅
+  ~~~
+
+  
