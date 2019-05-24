@@ -123,14 +123,6 @@ class Dbhelper:
             return self
         self.params['fields'] = str(value)
         return self
-    def insert(self,data):
-        """
-
-        :param data: {'name':'tom','sex':'男'}
-        :return:
-        """
-        pass
-        sql = "INSERT INTO {table} ({fields}) VALUES({values})"
 
     def select(self):
         sql = "SELECT {fields} FROM {table} {where}  {groupby} {having} {orderby} {limit}"
@@ -149,6 +141,62 @@ class Dbhelper:
             print(e)
             return None
         return None
+
+    # insert 一条就记录
+    def insert(self, data):
+        """
+
+        :param data: 字典，代表一条记录，键是字段名
+        :return:
+        """
+        # 1 如果字典的值是字符串，两边添加单引号
+        self.__add_quote(data)
+
+        # 2.生成字段列表和值列表
+        keys = ''
+        values = ''
+        for key, value in data.items():
+            keys += key + ','
+            values += str(value) + ','
+        keys = keys.rstrip(',')
+        values = values.rstrip(',')
+        self.params['fields'] = keys
+        self.params['value'] = values
+
+        sql = "INSERT INTO {table} ({fields})  VALUES({value})".format(**self.params)
+        print(sql)
+        return self.execute(sql)
+
+    def update(self, data):
+        """
+
+        :param data: 字典
+        :return:
+        """
+        self.__add_quote(data)
+        self.params['value'] = ','.join([key + "=" + value for key, value in data.items()])
+        sql = "UPDATE {table} SET {value} {where}".format(**self.params)
+        return self.execute(sql)
+
+    def delete(self):
+        sql = "DELETE FROM {table} {where}".format(**self.params)
+        return self.execute(sql)
+
+    def execute(self, sql):
+        self.sql = sql
+        self.__init_param()
+        try:
+            res = self.cursor.execute(sql)
+            if res > 0:
+                self.conn.commit()
+                return True
+            else:
+                self.conn.rollback()
+                return False
+        except Exception as e:
+            print(e)
+            self.conn.rollback()
+            return False
 if __name__ == "__main__":
     db = Dbhelper('student')
     # print(db.select())
@@ -159,5 +207,8 @@ if __name__ == "__main__":
     # db.limit('2')
     # data = db.fields('sex ,count(*) ').groupby('sex').select()
     # print(data)
-    data = db.where(sid__ne=2).orderby('sid desc').select()  #{'sid__ne':2}
-    print(data)
+    # data = db.where(sid__ne=2).orderby('sid desc').select()  #{'sid__ne':2}
+    # print(data)
+    # db.insert({'name':'hello1','sex':'男'})
+    # db.where(sid=9).delete()
+    db.where(sid=8).update({'gid':10})
