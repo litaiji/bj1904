@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+
+<form action="" method="get">
+    <input type="text" name="username" placeholder="请输入用户名" maxlength="5"> <br>
+    <input type="password" name="password" placeholder="请输入密码"> <br>
+    性别: <input type="radio" name="sex" value="m" id="sex"> <label for="sex">男</label>
+         <input type="radio" name="sex" value="w" checked> 女 <br>
+    爱好: <input type="checkbox" name="hob" checked value="1" id="hhh"> <label for="hhh">抽烟</label>
+         <input type="checkbox" name="hob" checked value="2">喝酒
+         <input type="checkbox"  name="hob" value="3">烫头 <br>
+    头像: <input type="file" name="potrait"> <br>
+    <input type="hidden" name="uid" value="1">
+    <select name="address" size="5" multiple>
+        <option value="1">北京</option>
+        <option value="2" selected>河北</option>
+        <option value="3">河南</option>
+        <option value="4">山东</option>
+    </select> <br>
+    <textarea name="memo"  cols="30" rows="10"></textarea>
+    <input type="submit" name="btn" value="登录">
+    <input type="reset">
+    <input type="button" value="ok" id="btn1">
+</form>
+</body>
+</html>
+<script>
+    oBtn = document.getElementById('btn1')
+    oBtn.onclick = function(){
+        alert("ok")
+    }
+</script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超链接</title>
+</head>
+<body>
+<a href="http://www.sohu.com">搜狐</a> <br>
+<!-- 如果url不带协议,则认为是本地文件
+   file:///home/python/Desktop/course/bj1904/11/code/bd_logo1.png
+   -->
+<a href="www.baidu.com">百度</a> <br>
+<!--<a href="/home/python/Desktop/course/bj1904/11/code/bd_logo1.png">图片</a> <br>-->
+<!--  站点绝对路径: 访问站点文件,应该一站点根目录为基准现实   /代表站点根目录  -->
+<a href="/bj1904/11/code/bd_logo1.png">图片</a> <br>
+<!--  站点相对路径, 以html文件所在目录为基准,  ../ 父目录  ./子目录 -->
+<a href="bd_logo1.png">图片</a> <br>
+
+<!--  本地文件访问   必须双击html文件访问才可以使用-->
+<a href="file:///home/python/Desktop/course/bj1904/11/code/bd_logo1.png">本地文件绝对路径</a>
+<a href="./bd_logo1.png">本地文件相对路径</a>
+
+<p>
+    href:目标地址,url <br>
+    <!--http://www.sohu.com:80/a/316540035_267106?g=0?code=a8b082f74d63107b7dfbb3599be0773a&spm=smpc.home.top-news1.1.1558918827910GtvNe8W&_f=index_cpc_0-->
+    url组成:  <协议>://<主机地址>[:端口] [请求路径][?请求参数][#锚点] <br>
+             协议: http   htts  ftp  ssh thunder  <br>
+             主机地址: 可以是ip或者域名 <br>
+             端口:   80  443   21   22 <br>
+             请求路径: /index.html    /123/1.txt  /student/1/2 <br>
+             请求参数: ?key=value&key=value&key=value <br>
+             锚点:  #锚点名 主要用于页面内跳转 <br>
+</p>
+</body>
+</html>
